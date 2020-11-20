@@ -49,6 +49,6 @@ table, th, td, tr {
     font-family: Arial;
     color: #705d56;
  } 
- ol, ul {
+ ol, ul, li {
     text-align: center;
  }
