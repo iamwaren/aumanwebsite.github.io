@@ -43,3 +43,12 @@ table, th, td, tr {
     font-family: Verdana;
     border-collapse: collapse;
   }
+ h2 {
+    text-align: center; 
+    font-size: 40px; 
+    font-family: Arial;
+    color: #705d56;
+ } 
+ ol, ul {
+    text-align: center;
+ }
