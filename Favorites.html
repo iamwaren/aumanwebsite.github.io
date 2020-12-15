@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Favorites page</title>
+        <title>Contact page</title>
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="shortcut icon" type="image/png" href="faviconn.png" />
+        <style>
+            .my_links {
+                text-decoration: none;
+                margin-left: 110px;
+                padding-bottom: 10px;
+                font-family: Verdana;
+            }
+            .my_links:hover {
+                text-decoration: wavy;
+                color:blue;
+                font-size: 24px;
+                background-color:yellow;
+                padding: 5px;
+            }
+            div.fb {
+                float: right;
+                position: absolute;
+                top: 55px;
+                left: 450px;
+                width: 400px;
+                height: 100;
+                font-family: Verdana;
+            }
+            div.fa {
+                float: right;
+                position: absolute;
+                top: 55px;
+                left: 950px;
+                width: 400px;
+                height: 100;
+                font-family: Verdana;
+            }
+            li.c{
+                margin-left: 42px;
+            }
+            li.d{
+                margin-left: 52px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <span>My Favorites</span>
+            <span>My Contact</span>
             <div>
                 <a href="index.html">Home</a>
-                <a href="Aboutme.html">About me</a>
-                <a href="Image.html">Image</a>
-                <a href="Education.html">Educational Background</a>
-                <a href="Favorites.html">Favorites</a>
+                <a href="Aboutme.html">About Me</a>
+                <a href="Image.html">My Image Gallery</a>
+                <a href="Favorites.html">Contacts</a>
             </div>
         </header>
-            <h2>List of Hobbies</h2>
+        <body>
+            <div class="fa">
+                <h2>Phone number</h2>
             <ul  text-align="center"; type="circle">
-                <li>Basketball</li>
-                <li>Online Games</li>
-                <li>Drums</li>
-                <li>Guitar</li>
-                <li>Piano/Keyboard</li>
-                <li>Edit videos</li>
+                <li class="d">Globe-09956710609</li>
+                <li class="d">Sun-0922515606</li>
+                <li class="d">Smart-09685326414</li>
+                <li class="d">TM-09954602066</li>
             </ul>
-            <hr>
-            <h2>List of Favorite Foods</h2>
-            <ol type="number">
-                <li>Sisig</li>
-                <li>Lumpia</li>
-                <li>Pancit</li>
-                <li>Humba</li>
-                <li>Fried Chicken</li>
-                <li>Lechon</li>
-                <li>Fish</li>
+            </div>
+            <div>
+                <h2 style="margin-left: 95px;">Email</h2>
+            <ol style="list-style-type: disc;">
+                <li class="c">waren.auman01@gmail.com</li>
+                <li class="c">w.ratilla01@gmail.com</li>
+                <li class="c">w.auman01@gmail.com</li>
+                <li class="c">waren.auman@gmail.com</li>
             </ol>
-            <hr>
-            <h2>List of Favorite Movies</h2>
-            <ol type="A">
-                <li>Abominable</li>
-                <li>Hotel Transylvania</li>
-                <li>Tom and Jerry</li>
-                <li>Avengers</li>
-                <li>Starwars</li>
-                <li>Black panther</li>
-                <li>Breakthrough</li>
-                <li>I can only Imagine</li>
-            </ol>
-            <hr>
-            <h2>List of Social Media sites</h2>
-            <ul type="square">
+            </div>
+            <div class="fb">
+                <h2>Social Media sites</h2>
+            <ul style="list-style-type: none;">
                 <li>
-                    <a href="https://web.facebook.com/warren.ratilla.3/">Facebook</a>
+                    <a href="https://web.facebook.com/warren.ratilla.3/" class="my_links" style="color: darkblue;">Facebook</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCjtO-YK1YSANt6iL7YdYwFg?view_as=subscriber">Youtube</a>
+                    <a href="https://www.youtube.com/channel/UCjtO-YK1YSANt6iL7YdYwFg?view_as=subscriber" class="my_links" style="color: red;">Youtube</a>
                 </li>
             </ul>
+            </div>
+            
     </body>
 </html>
