@@ -12,6 +12,7 @@ header {
 header > span {
     font-size: 20px;
     font-weight: 500;
+    image-resolution: 2px;
 }
 header div {
     float: right;
