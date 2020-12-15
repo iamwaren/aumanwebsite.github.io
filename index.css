@@ -50,3 +50,5 @@ table, th, td, tr {
     font-family: Arial;
     color: #705d56;
  } 
+ #my_header {
+    background-image: url(headerimage.jpg);
