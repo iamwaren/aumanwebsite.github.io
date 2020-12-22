@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF">
+	<title>Sign-up</title>	
+	<link rel="shortcut icon" type="image/png" href="faviconn.png" />
+</head>
+<body>	
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.A{
+	height: 105%;
+	width: 100%;
+    background-position: center;
+	background-size: cover;
+	position: static;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(LOGIN-BACKGROUND-1.jpg);
+	
+}
+.formbox{
+	width: 380px;
+	height: 900px;
+	position: relative;
+	margin: 2px auto;
+	background: white;
+	border-style: solid;
+	border-color: black;
+	padding: 5px;
+	overflow: hidden;
+	opacity: .7;
+
+}
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, rgb(195, 173, 230),#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group{
+	top: 180px;
+	font-family: sans-serif;
+	position: absolute;
+	width: 280px;
+	font-size: 5px;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #111;
+	outline: none;
+	background: transparent;
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, rgb(195, 173, 230),#ffad06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color:inherit;
+	text-decoration: none;
+}
+.chech-box{
+	margin: 30px 10px 30px 0;
+}
+span{
+	color: #111;
+	font-size: 12px;
+	bottom: 64.5px;
+	position: absolute;
+}
+#login{
+	left: 50px;
+}
+#register{
+	left: 450px;
+}
+div.my_footer {
+    margin-top: 420px;
+    height: 180px;
+    background-color: #2962ff;
+    background-repeat: no-repeat;
+	position: relative;
+}
+.fff{
+	margin-left: 100px;
+}
+h5{
+    font-family: Verdana;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+li{
+    padding-bottom: 10px;
+	font-family: Verdana;
+}	
+h4{
+    float: right;
+    padding-top: 23px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: Verdana;
+	margin-top: 40px;
+}
+#my_header {
+    background-image: url(headerimage.jpg);
+    height: 250px;
+    font-family: Verdana;
+}
+img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ol.ae{
+    margin-left: 220px;
+    margin-top: -205px;
+    font-size: 26px; 
+    font-family: Arial;
+    color: #705d56;
+    list-style-type: none;
+	padding: 20px;
+            }			
+			</style>
+	<body>
+        <header id="my_header">
+				<img src="ME.jpg" width="200" height="200">
+				<ol class="ae">
+					<li style="margin-left: 348px; font-size: 36px;">WELCOME</li>
+					<li style="margin-left: 300px;">Sign up and Register</li>
+				</ol> 
+        </header>
+    </body>
+
+	<div class="A">
+		<div class="formbox">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login ()">Login</button>	
+				<button type="button" class="toggle-btn" onclick="register ()">Register</button>
+			</div>
+		<form id="login" class="input-group">
+			<input type="text" class="input-field" placeholder="Username" required>
+			<input type="password" class="input-field" placeholder="Enter Password" required>
+			<input type="checkbox" class="chech-box"><span>Remember Password</span>	
+			<a href="index.html"><button type="submit" class="submit-btn">Log in</a></button>	
+        </form>
+        <br>
+		<form id="register" class="input-group">
+			<input type="text" class="input-field" placeholder="First name" required>
+			<input type="email" class="input-field" placeholder="Family name" required>
+			<input type="text" class="input-field" placeholder="Middle name" required>
+			<input type="text" class="input-field" placeholder="Email Address" required>
+			<input type="text" class="input-field" placeholder="Home address" required>
+			<input type="text" class="input-field" placeholder="Gender" required>
+			<input type="text" class="input-field" placeholder="Mobile number" required>
+			<input type="text" class="input-field" placeholder="Date of Birth" required>
+			<input type="text" class="input-field" placeholder="City" required>
+			<input type="text" class="input-field" placeholder="Zip code" required>
+			<input type="text" class="input-field" placeholder="Province" required>
+			<input type="text" class="input-field" placeholder="Hobbies" required>
+			<input type="text" class="input-field" placeholder="Submit" required> 
+			<input type="checkbox" class="chech-box" placeholder="I Agree to the terms & conditions" required>
+			<span>I Agree to the terms & condition</span>
+			<button type="submit" class="submit-btn">Register</button>
+			
+		</form>
+	</div>
+		
+	<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+		
+	function register(){
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+	function login(){
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0";
+	}						
+	</script>
+	</body>
+	<body>
+		<div class="my_footer">
+		<h4>&copy; Waren Auman 2020</h4>
+		<h5>Explore:</h5>
+		<ol style="list-style-type: none;" class="fff">
+			<li><a href="Aboutme.html">About Me</a></li>
+			<li><a href="Image.html">My Image Gallery</a></li>
+			<li><a href="Favorites.html">Contacts</a></li>
+		</ol>
+		</div>  
+	</body>
+
+</body>
+</html>
+
+
+</body>
+</html>
